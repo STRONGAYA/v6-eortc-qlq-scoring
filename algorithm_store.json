@@ -1,0 +1,59 @@
+{
+  "name": "v6-eortc-qlq-scoring",
+  "image": "v6-eortc-qlq-scoring",
+  "vantage6_version": "4.6",
+  "code_url": "https://mygitrepo.org",
+  "documentation_url": "",
+  "partitioning": "horizontal",
+  "functions": [
+    {
+      "name": "central",
+      "description": "Vantage6 algorithm that performs EORTC QLQ function and symptom scale scoring.",
+      "type": "central",
+      "databases": [
+        {
+          "name": "Partial database 1"
+        }
+      ],
+      "arguments": [
+        {
+          "name": "scales_to_score",
+          "type": "",
+          "description": ""
+        },
+        {
+          "name": "variables_to_stratify",
+          "type": "",
+          "description": ""
+        },
+        {
+          "name": "organization_ids",
+          "type": "",
+          "description": ""
+        }
+      ]
+    },
+    {
+      "name": "partial",
+      "description": "",
+      "type": "federated",
+      "databases": [
+        {
+          "name": "Database 1"
+        }
+      ],
+      "arguments": [
+        {
+          "name": "scales_to_score",
+          "type": "",
+          "description": ""
+        },
+        {
+          "name": "variables_to_stratify",
+          "type": "",
+          "description": ""
+        }
+      ]
+    }
+  ]
+}
